@@ -1,8 +1,7 @@
-TRUE
-TRUE
+
 modifier onlyAdmin() {
     require(msg.sender == admin, "Not an admin");
-    _;
+
 }
 
 constructor() {
@@ -24,6 +23,7 @@ function vote(uint256 _proposalId, bool support) external {
     require(!proposal.executed, "Proposal already executed");
     require(!proposal.voted[msg.sender], "Already voted");
     require(votingPower[msg.sender] > 0, "No voting power");
+
     
     proposal.voted[msg.sender] = true;
     if (support) {
