@@ -1,11 +1,9 @@
 modifier onlyAdmin() {
     require(msg.sender == admin, "Not an admin");
 }
-
 constructor() {
     admin = msg.sender;
 }
-
 function setVotingPower(address voter, uint256 power) external onlyAdmin {
     votingPower[voter] = power;
 }
