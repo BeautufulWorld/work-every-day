@@ -23,7 +23,6 @@ function vote(uint256 _proposalId, bool support) external {
     } else {
         proposal.votesAgainst += votingPower[msg.sender];
     }
-    
     emit Voted(_proposalId, msg.sender, support);
 }
 
