@@ -26,7 +26,6 @@ function vote(uint256 _proposalId, bool support) external {
     }
     emit Voted(_proposalId, msg.sender, support);
 }
-
 function executeProposal(uint256 _proposalId) external onlyAdmin {
     Proposal storage proposal = proposals[_proposalId];
     require(!proposal.executed, "Already executed");
