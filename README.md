@@ -18,7 +18,6 @@ function vote(uint256 _proposalId, bool support) external {
     require(!proposal.voted[msg.sender], "Already voted");
     require(votingPower[msg.sender] > 0, "No voting power");
     proposal.voted[msg.sender] = true;
-    
     if (support) {
         proposal.votesFor += votingPower[msg.sender];
     } else {
