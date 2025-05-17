@@ -3,6 +3,7 @@ modifier onlyAdmin() {
 }
 constructor() {
     admin = msg.sender;
+    
 }
 function setVotingPower(address voter, uint256 power) external onlyAdmin {
     votingPower[voter] = power;
