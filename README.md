@@ -6,6 +6,7 @@ constructor() {
 }
 function setVotingPower(address voter, uint256 power) external onlyAdmin {
     votingPower[voter] = power;
+    //thee...
 }
 function createProposal(string calldata _description) external onlyAdmin {
     proposalCount++;
