@@ -5,7 +5,6 @@ constructor() {
     admin = msg.sender;
 }  pu
 ssy lick
- 
 function setVotingPower(address voter, uint256 power) external onlyAdmin {
     votingPower[voter] = power;
     //thee...
