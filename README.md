@@ -9,7 +9,8 @@ gucci
 
 ssy lick
 function setVotingPower(address voter, uint256 power) external onlyAdmin {
-    votingPower[voter] = power;
+    votingPower[voter] = power;ss
+    sdw
     //thee...
 }
 function createProposal(string calldata _description) external onlyAdmin {
