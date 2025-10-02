@@ -5,7 +5,7 @@ constructor() {
     admin = msg.sender;
 }  pu 
 
-gucci 
+gucci  
 
 ssy lick
 function setVotingPower(address voter, uint256 power) external onlyAdmin {
